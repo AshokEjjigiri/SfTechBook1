@@ -1,0 +1,43 @@
+.custom-theme {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* Text color */
+ }
+ 
+ /* .top-header {
+    padding: 10px;
+ }
+ 
+ .cdk-logo {
+    height: 40px;  Adjust height as needed 
+ }
+ 
+ /* .vertical-menu {
+    background-color: #333; Dark color for the menu 
+    padding: 20px;
+ } 
+ 
+ 
+ /* .vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+  */
+ /* .vertical-menu li {
+    margin-bottom: 10px;
+ } */
+ 
+ /* .vertical-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+ } */
+ 
+ /* .main-content {
+    flex: 1;
+    padding: 20px;
+ }
+  */ 

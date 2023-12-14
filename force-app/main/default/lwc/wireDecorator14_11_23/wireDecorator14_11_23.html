@@ -1,0 +1,18 @@
+<template>
+    <!-- <lightning-card title="Displaying Accounts"> -->
+     <!-- <template for:each={data} for:item="account"> -->
+     <!-- <p key={account.id}>{account.Name}</p> -->
+
+     <!-- </template> -->
+    <!-- </lightning-card> -->
+
+    <lightning-card title="Display Account Table">
+        <div style="height:300px;">
+    <lightning-datatable key-field="id"
+    data={data}
+    columns={columns}>
+     
+    </lightning-datatable>
+    </div>
+    </lightning-card>
+</template>

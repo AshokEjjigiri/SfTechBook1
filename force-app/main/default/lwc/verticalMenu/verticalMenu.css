@@ -1,0 +1,66 @@
+.tabContent{display:block; padding:15px; font-size:14px; overflow: hidden; width: 100%;}
+.tabContent .postImage{display: inline-block;  }
+.tabContent .postImage img{border:1px #ddd solid;}
+.readMore{font-size:14px; font-weight:bold; display:inline-block; padding:0 0 0 10px;}
+.readMore a{color:#ff0000; text-decoration:none;}
+.readMore a:hover{color:#04a5ca; text-decoration:none;}
+.readMore a:active{color:#04a5ca; text-decoration:none;}
+.titleTag{font-size:18px;}
+.titleTag a{color:#003333; font-weight:bold;}
+.imgRt{width:52%; float:left;}
+
+:host{
+    --lwc-inputStaticFontSize: 14px;
+    --lwc-inputStaticFontWeight: bold;
+    
+    
+    /* --sds-c-icon-color-foreground-default: rgb(6, 150, 239); */
+    
+    
+ }
+ .datetimegrid{
+
+    background:#48b4d4;
+    font-size:55px;
+    text-align:left;
+    padding-left: 20px;
+    padding-bottom: 25px;
+ }
+ .my-icon {
+   --slds-c-icon-color-foreground-default: white;
+ }
+
+ .sidebar{
+   height:90vh;
+}
+.sidebar-button{    
+   width: 20px;
+}
+.open-panel {
+   width: 17%;
+   overflow:hidden;
+   transition: 0.3s;
+}
+.close-panel {
+   width: 20px;
+   min-width: 0px;
+   overflow:unset;
+   transition: 0.3s;
+}
+.expand-panel{
+   width: 95%;
+   transition: 0.3s;
+}
+.collapse-panel{
+   width: 82.5%;
+   transition: 0.3s;
+}
+.page-section {
+   border: solid 1px #ccc;
+   padding: .25rem;
+   background-color: #fff;
+}
+
+.refreshRotate {
+   animation: rotate .4s;
+}

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="stadard:account">
+        <div class="slds-m-around_medium">
+
+        </div>
+     <lightning-button label="Send To Child" onclick={SendToChild} variant="brand"></lightning-button>
+     <br><br/>
+     <p>
+        {messageFromChild}
+     </p>
+    </lightning-card>
+    <c-child5_12_23 text-message={message} onchildmessage={handleChildMessage}></c-child5_12_23>
+</template>

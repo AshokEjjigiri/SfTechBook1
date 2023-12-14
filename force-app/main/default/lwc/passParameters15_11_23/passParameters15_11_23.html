@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Calculator Example">
+     <div>
+        <lightning-input label="Enter First Number" name="fnumber" value={fstnumber} onchange={changeHandle}></lightning-input>
+        <lightning-input label="Enter Second Number" name="snumber" value={scdnumber} onchange={changeHandle}></lightning-input>
+     </div>
+     
+     <lightning-button label="Sumbit" variant="brand" onclick={clickHandle} slot="actions"></lightning-button>
+    
+     <div>Addition Result :{sum}</div>
+    </lightning-card>
+</template>

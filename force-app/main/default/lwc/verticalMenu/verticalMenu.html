@@ -1,0 +1,201 @@
+<!--
+@description       : 
+@author            : ChangeMeIn@UserSettingsUnder.SFDoc
+@group             : 
+@last modified on  : 10-23-2023
+@last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-layout style="background:#141e29; position:fixed;">
+        <lightning-layout-item class="slds-theme_offline" style="background:#141e29;font-family: Roboto, sans-serif;">
+            <lightning-vertical-navigation selected-item="dashboard" onselect={changeHandleAction} class="navigation"
+                style=" width:500px;">
+                <lightning-vertical-navigation-section style="font-size: 14px;">
+                    <lightning-vertical-navigation-item-icon label="Dashboard" name="dashboard" value="one"
+                        icon-name="utility:ad_set" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="eStore" name="eStore" icon-name="utility:cart"
+                        size="large" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Legal Addenda" name="legaladdenda"
+                        icon-name="utility:user" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Manage Invoices" name="manageinvoices"
+                        icon-name="utility:moneybag" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="My install" name="myinstall"
+                        icon-name="utility:settings" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Product Guide" name="productguide"
+                        icon-name="utility:document_preview" class="my-icon"></lightning-vertical-navigation-item-icon>
+                    <lightning-vertical-navigation-item-icon label="Products and Services" name="productsservices"
+                        icon-name="utility:custom_apps" class="my-icon"></lightning-vertical-navigation-item-icon>
+                </lightning-vertical-navigation-section>
+            </lightning-vertical-navigation>
+
+            <div style="padding-top:77%">
+                <hr>
+                <div class="slds-grid slds-gutters " style="margin-right:0%;margin-left:0%; text-align:-webkit-right;">
+
+                    <div class="slds-col slds-size_3-of-5" style="background: #141D27;">
+                        <h3 style=" font-family: 'Trebuchet MS', sans-serif;">CDK GLOBAL</h3>
+                    </div>
+                    <div class="slds-col slds-size_2-of-5" style="background: #141D27;">
+                        <BUTTON class="slds-button slds-button_brand myButton" title="Submit" type="button"
+                            style="height:25px;width:30px;"><b>></b></BUTTON>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </lightning-layout-item>
+
+
+
+
+
+        <template if:true={dashboardValue}>
+
+            <div class="tabContent" style="background:white;padding-left: 0px;padding-right: 0px;">
+                <div class="slds-text-heading_medium slds-theme_inverse"
+                    style="background:rgb(6, 150, 239); margin-top: -0.5rem;padding-top:15px;padding-left: 1%;">Good
+                    Morning, {currentUserName}</div>
+
+                <div class="demo-only demo-only--sizing slds-grid slds-wrap slds-theme_default"
+                    style="border-radius:10px;height:590px;background:white;">
+
+                    <div class="slds-size_1-of-2">
+                        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+                            <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                                <div class="slds-size_1-of-2 slds-text-heading_medium">
+
+                                    <lightning-icon icon-name="utility:store" size="large"></lightning-icon>e Store
+                                    <div class="slds-text-heading_small">
+                                        <p>Purchase Pc's</p>
+                                        <p>Printers</p>
+                                        <p>Professional</p>
+                                        <p> Services Consulting</p>
+                                        <p>and more.</p>
+                                    </div>
+
+                                </div>
+                                <div class="slds-size_1-of-2 slds-text-heading_medium">
+                                    <lightning-icon icon-name="utility:store" size="large"></lightning-icon> Toner
+                                    eStore
+                                    <div class="slds-text-heading_small"> Order your</div>
+                                    <div class="slds-text-heading_small"> LaserSattion</div>
+                                    <div class="slds-text-heading_small"> Toner Cartridge </div>
+                                    <div class="slds-text-heading_small"> for your CDK Laser</div>
+                                    <div class="slds-text-heading_small">Printers.</div>
+
+                                </div>
+                                <div class="slds-size_1-of-2 slds-text-heading_medium">
+                                    <lightning-icon icon-name="utility:thunder" size="large"></lightning-icon> Legal
+                                    Addenda
+                                    <div class="slds-text-heading_small">
+                                        View CDK Global
+                                        standard legal
+                                        documents and your
+                                        current executed CDK
+                                        Global Addenda.</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-2 ">
+                        <div
+                            class=" slds-theme_inverse slds-text-heading_large slds-text-align_center slds-m-around_x-small datetimegrid">
+                            <p id="p1">{strTime} </p>
+                            <P>{timeformatValue}</P>
+
+
+
+                            <div class="slds-text-heading_medium">
+                                <p>{dayValue} , {monthValue} {dateValue}</p>
+                            </div>
+                            <div class="slds-text-heading_medium">
+                                <p>{yearValue}</p>
+                            </div>
+
+                            <div class="slds-size_1-of-2">
+
+                            </div>
+
+
+                        </div>
+                        <div></div>
+                        <div>
+
+                            <div class="slds-box slds-box_x-small  slds-text-heading_medium">Manage My Invoice
+                                <div class="slds-text-heading_small">Enroll in and access any of our FREE billing
+                                    services.Manage your Invoice,ePayments,paperless billing or Smart Invoice.Learn more
+                                    below or contact your account specialist for more details.</div>
+                                <div class="slds-text-heading_small">
+                                    <button class="slds-button">Manage My Invoice</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </template>
+        <template if:true={eStoreValue}>
+            <div class="tabContent">
+                <div class="slds-text-heading_medium slds-theme_inverse" style=" padding-top:20px;padding-left: 1%;">
+                    <p>This is eStore</p>
+                </div>
+
+            </div>
+
+        </template>
+
+        <template if:true={legaladdendaValue}>
+            <div class="tabContent">
+                <p>This is Legal Addenda</p>
+
+            </div>
+
+        </template>
+
+        <template if:true={manageInvoicesValue}>
+            <div class="tabContent">
+                <p>This is Manage Invoice </p>
+            </div>
+
+        </template>
+
+        <template if:true={myinstallValue}>
+            <div class="tabContent" style="background:white;padding-left: 0px;padding-right: 0px;">
+                <template if:false={closeCom}>
+                    <!-- <c-home-page get-hide-comp = {hideComp}></c-home-page> -->
+                    <!-- <c-home-page onclosecomp={closeComponent}></c-home-page> -->
+                </template>
+                <template if:true={closeCom}>
+                    <!-- <c-c-d-k_-my-install-tab-page></c-c-d-k_-my-install-tab-page> -->
+                    <!-- <c-home-page onclosecomp={closeComponent}></c-home-page> -->
+                </template>
+            </div>
+        </template>
+
+        <template if:true={productValue}>
+            <div class="tabContent">
+                <p> This is Product Guide</p>
+            </div>
+
+        </template>
+        <template if:true={productservicesValue}>
+            <div class="tabContent">
+                <p> This is Products and Services </p>
+            </div>
+
+        </template>
+
+
+    </lightning-layout>
+    <br /><br />
+
+
+</template>

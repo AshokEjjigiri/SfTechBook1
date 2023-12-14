@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:coonected_apps" size="small"></lightning-icon>
+          Child
+        </h3>
+        <p class="slds-p-horizontal_small">
+       {textMessage}
+        </p></br>
+        <lightning-button label="Send To parent" onclick={SendDataToParent} variant="brand"></lightning-button>
+    </lightning-card>
+</template>

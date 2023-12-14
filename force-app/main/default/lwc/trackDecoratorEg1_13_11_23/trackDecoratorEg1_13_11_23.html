@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Wellcome">
+<div>{Message}</div>
+<lightning-input value={Message} label="Enter Text" name="greetings" onchange={onchangeGreetings}></lightning-input>
+
+<h1>Happy Well come
+    <span> Ashok</span>
+</h1>
+
+    </lightning-card>
+<lightning-card title="Practice JS">
+    <button onclick={clickme}>click here</button>
+
+    <div class="hoverme" 
+        style="background-color:blueviolet; height: 200px; width: 200px;"
+        onmouseover={mouseoverhandler}
+        onmouseout={mouseouthandler}>
+    </div>
+    <div>
+       
+        <input style="margin-top: 20px;"
+        onchange={chnagehandler} 
+        type="number"/>
+    
+    </div>
+    <div>
+        <label>Enter Number</label>
+        <input style="margin-top: 30px;" 
+              onchange={hanbdlechnagenumber}
+              type="number">
+    </div>
+
+</lightning-card>
+    
+</template>
